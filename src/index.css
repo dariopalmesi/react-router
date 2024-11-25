@@ -2,3 +2,13 @@
     width: 150px;
     padding: 0.5rem;
 }
+
+nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
