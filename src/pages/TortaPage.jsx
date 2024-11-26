@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 
 
-export default function TortaPage() {
+export default function TortaPage({ }) {
 
     const [torta, setTorta] = useState(null)
     const { slug } = useParams()
@@ -27,7 +27,7 @@ export default function TortaPage() {
 
     return (
         <>
-            <h1>Torta :slug {slug}</h1>
+            <h1 className="text-white text-center">Singola Torta</h1>
             {
                 torta ? (
                     <div>
@@ -37,7 +37,9 @@ export default function TortaPage() {
                             <p>{torta.content}</p>
                             <img className="tortaImage" src={`http://localhost:3000/img/${torta.image}`} alt="" />
                             <p>{torta.tags}</p>
-
+                            <Link to={'/torte'}>
+                                <button className="btn btn-success">Back</button>
+                            </Link>
                         </div>
 
                     </div>
