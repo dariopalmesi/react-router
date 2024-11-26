@@ -2,7 +2,6 @@ img {
     max-width: 100%;
 }
 
-
 .logo {
     width: 150px;
     padding: 0.5rem;
@@ -20,8 +19,16 @@ nav {
 
 .card {
     box-shadow: 0px 0px 30px black;
+    
 }
 
 .tortaImage {
     width: 500px;
+}
+
+.hover:hover {
+    text-decoration: underline 2px;
+    color: green;
+    text-decoration-style: solid;
+    text-transform: capitalize;
 }

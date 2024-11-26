@@ -33,12 +33,12 @@ export default function TortaPage({ }) {
                     <div>
                         <div className="card p-3 m-3">
                             <h3 className='mb-3'>{torta.title}</h3>
-                            <p>{torta.slug}</p>
+                            <p >{torta.slug}</p>
                             <p>{torta.content}</p>
                             <img className="tortaImage" src={`http://localhost:3000/img/${torta.image}`} alt="" />
                             <p>{torta.tags}</p>
                             <Link to={'/torte'}>
-                                <button className="btn btn-success">Back</button>
+                                <button className="btn btn-success button">Back</button>
                             </Link>
                         </div>
 
