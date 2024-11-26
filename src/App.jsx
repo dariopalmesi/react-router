@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
-import AppHeader from './components/AppHeader'
-import AppFooter from './components/AppFooter'
-import AppMain from './components/AppMain.jsx'
+import TortePage from './pages/TortePage.jsx'
 import Home from './pages/Home.jsx'
 import ChiSiamo from './pages/ChiSiamo.jsx'
 import DefaultLayout from './components/DefaultLayout.jsx'
@@ -20,7 +18,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path='/posts' element={<AppMain />} />
+            <Route path='/torte' element={<TortePage />} />
             <Route path='/chisiamo' element={<ChiSiamo />} />
           </Route>
         </Routes>
